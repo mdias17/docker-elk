@@ -1,0 +1,14 @@
+---
+#
+cluster.name: "elk_docker_cluster"
+network.host: 0.0.0.0
+cluster.initial_master_nodes: elasticsearch01,elasticsearch02,elasticsearch03
+
+## X-Pack settings
+## see https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-xpack.html
+#
+xpack.license.self_generated.type: basic
+xpack.security.transport.ssl.enabled: true
+xpack.security.enabled: true
+#xpack.monitoring.enabled: true
+xpack.monitoring.collection.enabled: true
